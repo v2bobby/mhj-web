@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mayhaj Farm — Closed-loop agri-innovation turning poultry waste into premium organic fertilizer and high-quality eggs. Building the future of sustainable urban agriculture in Lagos. Pre-MVP. Join the pioneer waitlist.">
+    <meta name="theme-color" content="#050505">
+    <title>Mayhaj Farm • Closed-Loop Agri-Innovation | Lagos</title>
+    
+    <!-- Tailwind CSS via CDN for premium, production-grade UI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon / Logo reference -->
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+<body class="bg-[#050505] text-[#F1F5F9] overflow-x-hidden">
+    <!-- ========== NAV ========== -->
+    <nav class="nav fixed top-0 left-0 right-0 z-50 py-5">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#hero" class="flex items-center gap-x-3 group">
+                <img src="logo.svg" alt="Mayhaj Farm" class="h-9 w-auto transition-transform group-hover:scale-[1.02]">
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center gap-x-9 text-sm font-medium tracking-[-0.2px]">
+                <a href="#vision" class="nav-link text-[#CBD5E1] hover:text-white">The Vision</a>
+                <a href="#challenge" class="nav-link text-[#CBD5E1] hover:text-white">The Challenge</a>
+                <a href="#solution" class="nav-link text-[#CBD5E1] hover:text-white">Our Approach</a>
+                <a href="#impact" class="nav-link text-[#CBD5E1] hover:text-white">Impact</a>
+            </div>
+            
+            <div class="hidden md:block">
+                <a href="#waitlist" 
+                   class="btn-primary inline-flex items-center justify-center px-6 py-2.5 rounded-2xl text-sm font-semibold tracking-[-0.3px] shadow-lg">
+                    Join the Waitlist
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn"
+                    class="md:hidden w-10 h-10 flex items-center justify-center text-[#94A3B8] hover:text-white transition-colors"
+                    aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0A0F0A] border-t border-white/10 px-6 py-8 mobile-nav">
+            <div class="flex flex-col gap-y-5 text-base font-medium">
+                <a href="#vision" class="mobile-nav-link py-1 text-[#CBD5E1]">The Vision</a>
+                <a href="#challenge" class="mobile-nav-link py-1 text-[#CBD5E1]">The Challenge</a>
+                <a href="#solution" class="mobile-nav-link py-1 text-[#CBD5E1]">Our Approach</a>
+                <a href="#impact" class="mobile-nav-link py-1 text-[#CBD5E1]">Impact</a>
+                <div class="pt-4 border-t border-white/10">
+                    <a href="#waitlist" 
+                       class="btn-primary w-full inline-flex justify-center items-center px-6 py-3 rounded-2xl text-sm font-semibold">
+                        Join the Pioneer Waitlist
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <header id="hero" class="hero min-h-[100dvh] flex items-center pt-16 relative">
+        <div class="hero-particles"></div>
+        
+        <div class="max-w-5xl mx-auto px-6 relative z-10 pt-28 pb-16">
+            <div class="max-w-4xl">
+                <!-- Status Badge -->
+                <div class="inline-flex items-center gap-x-2 rounded-3xl border border-white/10 bg-white/5 px-4 py-1.5 mb-8 text-xs tracking-[1.5px] font-mono uppercase text-[#94A3B8]">
+                    <div class="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse"></div>
+                    PRE-MVP • IKORODU, LAGOS • TARGET LAUNCH Q4 2026
+                </div>
+                
+                <h1 class="display-xl font-bold tracking-[-3.2px] leading-[0.96] mt-4 mb-6">
+                    Waste becomes<br>wealth.<br>
+                    <span class="bg-gradient-to-r from-[#10B981] via-[#34D399] to-[#10B981] bg-clip-text text-transparent">Agriculture, re-engineered.</span>
+                </h1>
+                
+                <p class="max-w-[42ch] text-2xl md:text-[27px] leading-tight tracking-[-0.6px] text-[#CBD5E1] mb-10">
+                    Mayhaj Farm is building Lagos’ first closed-loop agri-innovation system — 
+                    converting poultry waste into premium, pathogen-free organic fertilizer 
+                    while producing consistent, high-quality table eggs.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                    <a href="#waitlist" 
+                       class="btn-primary group inline-flex items-center justify-center gap-x-3 px-9 py-4 text-lg rounded-3xl font-semibold tracking-[-0.4px] shadow-2xl w-full sm:w-auto">
+                        Reserve Your Spot
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                    
+                    <a href="#solution" 
+                       class="btn-secondary inline-flex items-center justify-center gap-x-2 px-8 py-4 text-lg rounded-3xl font-semibold tracking-[-0.3px] w-full sm:w-auto">
+                        Explore the Model
+                    </a>
+                </div>
+                
+                <div class="mt-8 flex items-center gap-x-4 text-sm text-[#64748B]">
+                    <div class="flex -space-x-2">
+                        <div class="w-6 h-6 rounded-full bg-[#10B981]/30 border border-[#10B981]/50"></div>
+                        <div class="w-6 h-6 rounded-full bg-[#10B981]/30 border border-[#10B981]/50"></div>
+                        <div class="w-6 h-6 rounded-full bg-[#10B981]/30 border border-[#10B981]/50"></div>
+                    </div>
+                    <span class="font-mono tracking-widest text-xs">42 PIONEERS ALREADY ON THE LIST</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Subtle scroll indicator -->
+        <div class="absolute bottom-9 left-1/2 hidden lg:block -translate-x-1/2">
+            <div class="flex flex-col items-center text-[10px] tracking-[2px] text-[#475569] font-mono">
+                SCROLL TO BEGIN
+                <div class="h-px w-6 bg-white/30 mt-1.5"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== VALUE PROPOSITION ========== -->
+    <section class="max-w-5xl mx-auto px-6 pt-16 pb-20 border-b border-white/10">
+        <div class="text-center max-w-3xl mx-auto">
+            <div class="uppercase tracking-[3px] text-xs font-mono text-[#10B981] mb-3">THE MAYHAJ DIFFERENCE</div>
+            <h2 class="section-title font-bold tracking-[-1.8px] mb-6">
+                We don’t just produce eggs.<br>We engineer regenerative cycles.
+            </h2>
+            <p class="text-xl text-[#94A3B8] leading-relaxed">
+                Every kilogram of poultry waste is transformed into a soil-healing resource. 
+                Every egg supports a system designed for resilience, transparency, and long-term ecological value.
+            </p>
+        </div>
+    </section>
+
+    <!-- ========== THE CHALLENGE ========== -->
+    <section id="challenge" class="max-w-7xl mx-auto px-6 pt-20 pb-16">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
+            <div class="lg:w-5/12">
+                <div class="sticky top-24">
+                    <div class="uppercase tracking-[2.5px] text-xs font-mono text-[#10B981] mb-4">THE REALITY IN LAGOS</div>
+                    <h2 class="section-title font-bold tracking-[-1.6px] leading-none mb-6">
+                        A food system<br>under pressure.
+                    </h2>
+                    <p class="text-[#94A3B8] text-[17px] leading-relaxed max-w-md">
+                        Lagos faces interconnected crises that linear agriculture cannot solve. 
+                        Mayhaj Farm was designed from first principles to address all three simultaneously.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="lg:w-7/12 space-y-4">
+                <!-- Problem Cards -->
+                <div class="card p-8 rounded-3xl group">
+                    <div class="flex gap-5">
+                        <div class="icon-wrapper flex-shrink-0 w-12 h-12 rounded-2xl bg-red-950/40 flex items-center justify-center text-red-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-xl tracking-[-0.4px] mb-2">Protein Deficit</h3>
+                            <p class="text-[#94A3B8]">Lagos consumes <span class="font-semibold text-white">11 million eggs daily</span>, yet local supply suffers from a structural <span class="font-semibold text-white">40% deficit</span>. The result: price volatility, inconsistent quality, and long supply chains that compromise freshness.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card p-8 rounded-3xl group">
+                    <div class="flex gap-5">
+                        <div class="icon-wrapper flex-shrink-0 w-12 h-12 rounded-2xl bg-amber-950/40 flex items-center justify-center text-amber-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-3v3.75" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-xl tracking-[-0.4px] mb-2">Soil Degradation</h3>
+                            <p class="text-[#94A3B8]">Over-reliance on synthetic NPK has stripped urban soils of microbial life and structure. Water retention declines. Gardening costs rise. Long-term food resilience erodes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card p-8 rounded-3xl group">
+                    <div class="flex gap-5">
+                        <div class="icon-wrapper flex-shrink-0 w-12 h-12 rounded-2xl bg-orange-950/40 flex items-center justify-center text-orange-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m6.75 12l-3-3m0 0l-3 3m3-3v6m-1.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-xl tracking-[-0.4px] mb-2">Waste as Liability</h3>
+                            <p class="text-[#94A3B8]">Traditional poultry operations generate nitrogen-rich waste that, when improperly managed, contaminates waterways and creates neighbor disputes. This is lost economic value and environmental harm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== OUR APPROACH / SOLUTION ========== -->
+    <section id="solution" class="bg-[#0A0F0A] py-20 border-y border-white/10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-14">
+                <div class="uppercase tracking-[3px] text-xs font-mono text-[#10B981] mb-3">THE MAYHAJ MODEL</div>
+                <h2 class="section-title font-bold tracking-[-1.8px]">A closed-loop ecosystem.<br>Zero waste. Maximum value.</h2>
+            </div>
+            
+            <!-- Process Visualization -->
+            <div class="grid md:grid-cols-3 gap-6 mb-16">
+                <!-- Step 1 -->
+                <div class="process-step card p-8 rounded-3xl">
+                    <div class="flex items-center gap-x-4 mb-6">
+                        <div class="w-9 h-9 rounded-2xl bg-[#10B981] text-[#050505] flex items-center justify-center font-mono text-sm font-bold tracking-widest">01</div>
+                        <div>
+                            <div class="font-semibold tracking-tight">Precision Poultry</div>
+                            <div class="text-xs text-[#64748B] font-mono tracking-widest">200 ISA BROWN LAYERS</div>
+                        </div>
+                    </div>
+                    <p class="text-[#94A3B8] text-[15px]">Biosecure modified container housing engineered for Lagos climate. Delivers consistent <span class="font-semibold text-white">85–90% lay rates</span> year-round with superior disease protection.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="process-step card p-8 rounded-3xl">
+                    <div class="flex items-center gap-x-4 mb-6">
+                        <div class="w-9 h-9 rounded-2xl bg-[#10B981] text-[#050505] flex items-center justify-center font-mono text-sm font-bold tracking-widest">02</div>
+                        <div>
+                            <div class="font-semibold tracking-tight">Thermophilic Composting</div>
+                            <div class="text-xs text-[#64748B] font-mono tracking-widest">28-DAY BIO-CHEMISTRY</div>
+                        </div>
+                    </div>
+                    <div class="space-y-4 text-sm">
+                        <div><span class="font-semibold text-[#34D399]">Phase 1 — Heating:</span> 60°C pathogen neutralization</div>
+                        <div><span class="font-semibold text-[#34D399]">Phase 2 — Curing:</span> Weekly turning for oxygenation</div>
+                        <div><span class="font-semibold text-[#34D399]">Phase 3 — Refining:</span> Sieved, moisture-controlled premium texture</div>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="process-step card p-8 rounded-3xl">
+                    <div class="flex items-center gap-x-4 mb-6">
+                        <div class="w-9 h-9 rounded-2xl bg-[#10B981] text-[#050505] flex items-center justify-center font-mono text-sm font-bold tracking-widest">03</div>
+                        <div>
+                            <div class="font-semibold tracking-tight">Dual Revenue Streams</div>
+                            <div class="text-xs text-[#64748B] font-mono tracking-widest">EGGS + FERTILIZER</div>
+                        </div>
+                    </div>
+                    <p class="text-[#94A3B8] text-[15px]">Grade-A brown eggs for bakeries &amp; households. Premium, odor-free organic fertilizer for urban gardeners, estates, and landscape professionals. One system. Two high-value products.</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <p class="max-w-lg mx-auto text-[#64748B] text-sm tracking-wide">Every input is optimized. Every output creates value. This is not waste management — it is resource intelligence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== KEY FEATURES ========== -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="mb-12">
+            <div class="uppercase tracking-[3px] text-xs font-mono text-[#10B981] mb-3">ENGINEERED DIFFERENCE</div>
+            <h2 class="section-title font-bold tracking-[-1.5px]">Built for performance.<br>Designed for regeneration.</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="feature-card card p-7 rounded-3xl group">
+                <div class="icon-wrapper w-11 h-11 mb-7 rounded-2xl bg-[#10B981]/10 flex items-center justify-center text-[#10B981]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 8.944 11.922a11.94 11.94 0 005.112-.756 12.02 12.02 0 003.944-2.964 12.02 12.02 0 00.756-5.112z" />
+                    </svg>
+                </div>
+                <h4 class="font-semibold tracking-tight text-xl mb-3">Biosecure Container Architecture</h4>
+                <p class="text-[#94A3B8] text-[15px]">Superior climate control and disease isolation compared to open pens. Consistent performance even in extreme Lagos weather.</p>
+            </div>
+            
+            <div class="feature-card card p-7 rounded-3xl group">
+                <div class="icon-wrapper w-11 h-11 mb-7 rounded-2xl bg-[#10B981]/10 flex items-center justify-center text-[#10B981]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                    </svg>
+                </div>
+                <h4 class="font-semibold tracking-tight text-xl mb-3">28-Day Thermophilic Science</h4>
+                <p class="text-[#94A3B8] text-[15px]">Not dried manure. A biologically active, pathogen-free soil amendment refined through precise temperature, oxygenation, and curing protocols.</p>
+            </div>
+            
+            <div class="feature-card card p-7 rounded-3xl group">
+                <div class="icon-wrapper w-11 h-11 mb-7 rounded-2xl bg-[#10B981]/10 flex items-center justify-center text-[#10B981]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
+                </div>
+                <h4 class="font-semibold tracking-tight text-xl mb-3">Dual-Revenue Resilience</h4>
+                <p class="text-[#94A3B8] text-[15px]">Fertilizer monetization creates natural hedging against feed price volatility and egg market swings. 34% projected net margins at scale.</p>
+            </div>
+            
+            <div class="feature-card card p-7 rounded-3xl group">
+                <div class="icon-wrapper w-11 h-11 mb-7 rounded-2xl bg-[#10B981]/10 flex items-center justify-center text-[#10B981]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314-11.314z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+                <h4 class="font-semibold tracking-tight text-xl mb-3">Ikorodu–Lagos Corridor Advantage</h4>
+                <p class="text-[#94A3B8] text-[15px]">Lower land costs + proximity to high-density markets (Ikeja, Magodo, Lekki). Fresher eggs. Lower logistics cost for heavy fertilizer bags.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== IMPACT & METRICS ========== -->
+    <section id="impact" class="max-w-5xl mx-auto px-6 py-16 border-t border-white/10">
+        <div class="text-center mb-12">
+            <div class="uppercase tracking-[3px] text-xs font-mono text-[#10B981] mb-3">ENGINEERED FOR IMPACT</div>
+            <h2 class="section-title font-bold tracking-[-1.5px]">At full capacity, our model delivers measurable triple-bottom-line results.</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="card p-9 rounded-3xl text-center">
+                <div class="font-mono text-6xl font-semibold tracking-tighter text-[#10B981]">34%</div>
+                <div class="mt-3 text-lg font-semibold tracking-tight">Net Profit Margin</div>
+                <p class="mt-4 text-sm text-[#64748B]">Significantly higher than traditional single-stream poultry farms through fertilizer revenue and zero waste disposal costs.</p>
+            </div>
+            <div class="card p-9 rounded-3xl text-center">
+                <div class="font-mono text-6xl font-semibold tracking-tighter text-[#10B981]">+25%</div>
+                <div class="mt-3 text-lg font-semibold tracking-tight">Soil Water Retention</div>
+                <p class="mt-4 text-sm text-[#64748B]">Our refined organic fertilizer measurably improves soil structure and water-holding capacity for urban gardeners and estates.</p>
+            </div>
+            <div class="card p-9 rounded-3xl text-center">
+                <div class="font-mono text-6xl font-semibold tracking-tighter text-[#10B981]">1.5t+</div>
+                <div class="mt-3 text-lg font-semibold tracking-tight">Annual Waste Converted</div>
+                <p class="mt-4 text-sm text-[#64748B]">Transforming what was once an environmental liability into ₦800,000+ in secondary annual revenue at base scale.</p>
+            </div>
+        </div>
+        
+        <div class="mt-8 text-center text-xs text-[#475569] font-mono tracking-widest">PROJECTIONS BASED ON STABILIZED 200-BIRD OPERATIONS • SUBJECT TO FINAL VALIDATION</div>
+    </section>
+
+    <!-- ========== COMING SOON / ROADMAP TEASER ========== -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+        <div class="rounded-3xl border border-white/10 bg-[#0A0F0A] p-10 md:p-14">
+            <div class="flex flex-col md:flex-row md:items-center gap-y-8 md:gap-x-16">
+                <div class="md:w-5/12">
+                    <div class="uppercase tracking-[2.5px] text-xs font-mono text-[#10B981] mb-4">BUILDING IN STEALTH</div>
+                    <h3 class="font-bold text-4xl tracking-[-1.4px] leading-none">First harvest &amp;<br>fertilizer batch<br>targeted Q4 2026.</h3>
+                </div>
+                <div class="md:w-7/12 text-[#94A3B8] text-[15px] space-y-6">
+                    <div class="flex gap-4">
+                        <div class="font-mono text-xs w-16 pt-1 text-[#10B981] flex-shrink-0">YEAR 1</div>
+                        <div>Achieve 90%+ capacity utilization. Break even on initial capital. Validate closed-loop economics in real Lagos conditions.</div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="font-mono text-xs w-16 pt-1 text-[#10B981] flex-shrink-0">YEAR 2</div>
+                        <div>Scale to 500 birds. Introduce pelletized fertilizer variants for premium indoor plant markets. Deepen retail and estate partnerships.</div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="font-mono text-xs w-16 pt-1 text-[#10B981] flex-shrink-0">YEAR 3</div>
+                        <div>Launch “Mayhaj Green Contracts” — full-service organic landscape maintenance for Lagos residential estates and commercial properties.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WAITLIST / EMAIL CAPTURE ========== -->
+    <section id="waitlist" class="max-w-3xl mx-auto px-6 py-20 text-center">
+        <div class="mb-10">
+            <div class="inline-block px-4 py-1 rounded-full bg-[#10B981]/10 text-[#34D399] text-xs tracking-[2px] font-mono mb-4">PIONEER ACCESS</div>
+            <h2 class="section-title font-bold tracking-[-1.6px]">Be among the first.</h2>
+            <p class="mt-4 text-xl text-[#94A3B8] max-w-md mx-auto">Join our exclusive pioneer community. Early access to Mayhaj eggs and fertilizer, behind-the-scenes progress, and priority for the 2026 launch.</p>
+        </div>
+        
+        <!-- Form -->
+        <div class="card max-w-md mx-auto p-8 md:p-10 rounded-3xl">
+            <form id="waitlist-form">
+                <div class="space-y-5">
+                    <div class="grid grid-cols-1 gap-4">
+                        <input type="text" id="full-name" name="full-name" required 
+                               class="input w-full px-6 py-4 rounded-2xl text-base placeholder:text-[#64748B] bg-[#0A0F0A]" 
+                               placeholder="Full name">
+                        
+                        <input type="email" id="email" name="email" required 
+                               class="input w-full px-6 py-4 rounded-2xl text-base placeholder:text-[#64748B] bg-[#0A0F0A]" 
+                               placeholder="Email address">
+                    </div>
+                    
+                    <div>
+                        <select id="interest" name="interest" required 
+                                class="input w-full px-6 py-4 rounded-2xl text-base text-[#CBD5E1] bg-[#0A0F0A]">
+                            <option value="" disabled selected>I’m primarily interested in...</option>
+                            <option value="eggs">Premium Table Eggs</option>
+                            <option value="fertilizer">Regenerative Organic Fertilizer</option>
+                            <option value="both">Both Eggs &amp; Fertilizer</option>
+                            <option value="investment">Investment / Partnership Opportunities</option>
+                            <option value="updates">General Updates &amp; Vision</option>
+                        </select>
+                    </div>
+                    
+                    <textarea id="message" name="message" rows="3" 
+                              class="input w-full px-6 py-4 rounded-3xl text-base placeholder:text-[#64748B] resize-y min-h-[92px] bg-[#0A0F0A]" 
+                              placeholder="Optional: Why are you excited about Mayhaj Farm?"></textarea>
+                </div>
+                
+                <button type="submit" 
+                        class="mt-7 btn-primary w-full py-[17px] text-base font-semibold rounded-3xl tracking-[-0.3px] flex items-center justify-center gap-x-2 disabled:opacity-70">
+                    <span id="submit-text">RESERVE MY PIONEER SPOT</span>
+                    <span id="submit-spinner" class="hidden">
+                        <svg class="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+                        </svg>
+                    </span>
+                </button>
+                
+                <p class="mt-5 text-[10px] text-[#475569] tracking-widest font-mono">WE RESPECT YOUR INBOX. UNSUBSCRIBE ANYTIME.</p>
+            </form>
+        </div>
+        
+        <!-- Success State (hidden by default) -->
+        <div id="success-state" class="hidden max-w-md mx-auto mt-8 p-8 rounded-3xl bg-[#0A0F0A] border border-[#10B981]/30 success-state">
+            <div class="mx-auto w-14 h-14 rounded-full bg-[#10B981]/10 flex items-center justify-center mb-5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-[#10B981]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                </svg>
+            </div>
+            <h3 class="font-semibold text-2xl tracking-tight">You're on the list.</h3>
+            <p class="mt-3 text-[#94A3B8]">Thank you. We’ll be in touch with exclusive updates, early access details, and founder notes as we build.</p>
+            <button onclick="resetForm()" 
+                    class="mt-6 text-xs tracking-widest font-mono text-[#10B981] hover:text-[#34D399] transition-colors">SUBMIT ANOTHER RESPONSE</button>
+        </div>
+    </section>
+
+    <!-- ========== FOUNDER SECTION ========== -->
+    <section class="max-w-5xl mx-auto px-6 py-16 border-t border-white/10">
+        <div class="grid md:grid-cols-12 gap-x-12 gap-y-10 items-center">
+            <div class="md:col-span-5">
+                <div class="founder-avatar rounded-[3.25rem] mx-auto md:mx-0 shadow-2xl">
+                    <!-- Elegant Initials Avatar -->
+                    <div class="text-center">
+                        <div class="font-display text-[72px] font-bold tracking-[-4.5px] text-white/90 leading-none">HMA</div>
+                        <div class="text-[9px] tracking-[3.5px] text-[#10B981]/70 font-mono mt-1">FOUNDER</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:col-span-7">
+                <div class="uppercase tracking-[3px] text-xs font-mono text-[#10B981] mb-4">LEADERSHIP</div>
+                <h3 class="font-bold text-5xl tracking-[-2.2px] leading-none mb-2">Hajara Maishera Abubakar</h3>
+                <p class="text-[#34D399] font-medium tracking-tight mb-6">Founder, Mayhaj Farm</p>
+                
+                <div class="prose prose-invert max-w-none text-[#CBD5E1]">
+                    <p>Hajara Maishera Abubakar is building Mayhaj Farm to prove that closed-loop agricultural systems can be both highly profitable and genuinely regenerative. She identified the structural waste and missed value in traditional poultry models and designed a deliberate alternative — one that treats every byproduct as a resource and every cycle as an opportunity to create outsized environmental and economic returns in Lagos’ unique context.</p>
+                </div>
+                
+                <div class="mt-8 flex flex-wrap items-center gap-x-4 gap-y-3 text-sm">
+                    <a href="mailto:hajara.a@mayhajfarms.life" 
+                       class="inline-flex items-center gap-x-2 px-5 py-2 rounded-2xl border border-white/10 hover:border-[#10B981]/40 transition-colors text-[#CBD5E1]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2.009 2.009 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <span>hajara.a@mayhajfarms.life</span>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/hajara-maishera-abubakar-039a9a219" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-x-2 px-5 py-2 rounded-2xl border border-white/10 hover:border-[#10B981]/40 transition-colors text-[#CBD5E1]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.064 0-1.14.92-2.064 2.063-2.064 1.14 0 2.064.925 2.064 2.064 0 1.139-.925 2.064-2.064 2.064zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer pt-14 pb-9">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-y-8 text-sm">
+                <div>
+                    <img src="logo.svg" alt="Mayhaj Farm" class="h-7 w-auto mb-4 opacity-90">
+                    <div class="text-[#475569] text-xs tracking-widest font-mono">MAYHAJ FARM LTD • IKORODU, LAGOS</div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row md:items-center gap-x-8 gap-y-2 text-[#64748B]">
+                    <a href="#vision" class="hover:text-white transition-colors">Vision</a>
+                    <a href="#challenge" class="hover:text-white transition-colors">The Challenge</a>
+                    <a href="#solution" class="hover:text-white transition-colors">Our Approach</a>
+                    <a href="#waitlist" class="hover:text-white transition-colors">Join Waitlist</a>
+                </div>
+                
+                <div class="text-xs text-[#475569] md:text-right">
+                    © 2026 Mayhaj Farm Ltd.<br>
+                    Confidential Strategic Document.<br>
+                    All Rights Reserved.
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-white/10 text-center">
+                <p class="text-[10px] text-[#334155] tracking-[1.5px] font-mono">THIS IS THE BEGINNING OF A NEW CHAPTER IN AFRICAN AGRI-INNOVATION.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="script.js"></script>
+    
+    <!-- Tailwind Script Configuration -->
+    <script>
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent', '#10B981');
+            
+            // Optional: Extend Tailwind if needed for future components
+            // This keeps the site feeling custom while leveraging Tailwind's utility power
+        }
+        
+        // Initialize on load
+        window.onload = function() {
+            initializeTailwind();
+        }
+    </script>
+</body>
+</html>
